@@ -1,14 +1,20 @@
 # Оформлення
 QSS = '''
-Qwidget#mainWindow{
-    background-color: #ac0ff4;
+QWidget#mainWindow, QWidget#cardWindow {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+QWidget{
+    font:17px;
 }
 QPushButton { 
-    background-color: rgb(210, 210, 210); 
+    background-color: #00691c; 
+    color: #f7faf8;
     border-width: 1px;
     border-radius: 10px;
     border-color: gray;
-    font: 11px "Montserrat";
+    font: 17px "Montserrat";
     min-width: 10em;
     padding: 6px;
 }
@@ -18,7 +24,7 @@ QPushButton:pressed {
 }
 QGroupBox {
     color: gray;
-    font: 14px;
+    font: 17px;
     border-radius: 7px;
     border: 2px solid gray;
     margin-top: 2ex;
@@ -30,7 +36,8 @@ QGroupBox::title {
 }
 
 QRadioButton {
-    font: bold 30px;
+    font: bold 20px;
+    color: #00691c;
 }
 QRadioButton::indicator {
     width: 14px;
@@ -58,7 +65,7 @@ QRadioButton::indicator::checked {
 }
 
 QLabel { 
-    font: 11px "Montserrat";
+    font: 17px "Montserrat";
 }
 '''
 
